@@ -10,7 +10,7 @@ Happy Coding!
 
 ## Prompt
 
-Today you will be making a horoscope App!
+Today you will be making a horoscope App! We reccommend you time yourself 3 hours for this practice.
 Here are some user stories we are looking for this app:
 
 - When a user pulls up the application they should see a form asking for their zodiac sign
