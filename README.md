@@ -5,6 +5,7 @@
 - Fork this repository.
 - Clone the repository down to your machine.
 - CD into the project
+- npm install
 - npm i -D cypress
 
 Happy Coding!
