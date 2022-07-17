@@ -25,6 +25,7 @@ Possible Extensions!
 - Install Router and make the page change when a horoscope is calculated
 
 *Some icons have been provided in the folder src/zodiac-symbols*
+
 *An App Cypress File has been inserted as a starting point*
 
 ## API
