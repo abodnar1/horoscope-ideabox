@@ -24,7 +24,8 @@ Possible Extensions!
 - User can enter birthday instead of zodiac sign and it should still return the correct zodiac!
 - Install Router and make the page change when a horoscope is calculated
 
-Some icons have been provided in the folder src/zodiac-symbols
+*Some icons have been provided in the folder src/zodiac-symbols*
+*An App Cypress File has been inserted as a starting point*
 
 ## API
 
