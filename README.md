@@ -11,12 +11,14 @@ Happy Coding!
 ## Prompt
 
 Today you will be making a horoscope App!
-Here are some user stories we are looking for this app to satisfy.
+Here are some user stories we are looking for this app:
 
 - When a user pulls up the application they should see a form asking for their zodiac sign
 - The user should be able to enter their name
 - When the user presses 'submit' their horoscope results should show on the homepage with their zodiac and name
 - The user should be able to press a button and return to a new form to request another horoscope
+
+
 Possible Extensions! 
 
 - User can enter birthday instead of zodiac sign and it should still return the correct zodiac!
