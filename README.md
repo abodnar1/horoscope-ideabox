@@ -24,6 +24,7 @@ Here are some user stories we are looking for this app:
 Possible Extensions!
 
 - User can enter birthday instead of zodiac sign and it should still return the correct zodiac!
+- Add options for today, tomorrow, or yesterday for the horoscope
 - Install Router and make the page change when a horoscope is calculated
 
 *Some icons have been provided in the folder src/zodiac-symbols*
