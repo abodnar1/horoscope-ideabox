@@ -21,7 +21,7 @@ Here are some user stories we are looking for this app:
 - The user should be able to press a button and return to a new form to request another horoscope
 
 
-Possible Extensions! 
+Possible Extensions!
 
 - User can enter birthday instead of zodiac sign and it should still return the correct zodiac!
 - Install Router and make the page change when a horoscope is calculated
@@ -33,11 +33,21 @@ Possible Extensions!
 ## API
 
 Here is the API you can use:
+https://aztro.sameerkumar.website
+Endpoint : 'https://aztro.sameerkumar.website/?sign=aries&day=today'
 
-Endpoint : http://ohmanda.com/api/horoscope/
+example post:
 
-To request different zodiacs add it to the end of the homepage url ie:
-http://ohmanda.com/api/horoscope/leo
+const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
+fetch(URL, {
+    method: 'POST'
+})
+.then(response => response.json())
+.then(json => {
+    const date = json.current_date;
+    console.log(date);
+});
+
 
 
 ## Available Scripts
