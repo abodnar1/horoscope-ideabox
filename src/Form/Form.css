@@ -1,0 +1,13 @@
+.form-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.input-field {
+  padding: .5em;
+  margin: 1em;
+}
+
+.submit-button {
+  padding: .5em;
+}

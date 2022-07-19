@@ -1,8 +1,9 @@
-import React from 'react'
-import './HoroscopeContainer.css'
+import React from 'react';
+import './HoroscopeContainer.css';
 
 const HoroscopeContainer = (props) => {
-  const {horoscope, userName, userZodiac, resetHome} = props
+  const {horoscope, description, userName, userZodiac, resetHome} = props
+
   return(
     <div className='horoscope-container'>
       <h1>{userName}'s Horoscope For Today</h1>
@@ -14,4 +15,4 @@ const HoroscopeContainer = (props) => {
   )
 }
 
-export default HoroscopeContainer
+export default HoroscopeContainer;
