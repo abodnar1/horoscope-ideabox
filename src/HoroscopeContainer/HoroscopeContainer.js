@@ -2,7 +2,7 @@ import React from 'react';
 import './HoroscopeContainer.css';
 
 const HoroscopeContainer = (props) => {
-  const {horoscope, description, userName, userZodiac, resetHome} = props
+  const { horoscope, description, userName, userZodiac, resetHome } = props
 
   return(
     <div className='horoscope-container'>

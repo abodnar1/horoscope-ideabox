@@ -10,49 +10,54 @@ class App extends Component {
       userName: "",
       userZodiac: "",
       horoscope: null,
-      isloading: false,
       error: ""
     };
   };
 
-  // componentDidMount = () => {
-  //   fetch("https://aztro.sameerkumar.website/?sign=aries&day=today")
-  //     .then(res => {
-  //       if(res.ok) {
-  //         return res.json()
-  //       } else {
-  //         this.setState({error: "There was an error, please try again."});
-  //         console.log("Error")
-  //       }
-  //     })
-  //     .then(data => console.log(data))
-  //     .catch(error => {
-  //       this.setState({error: "There was an error, please try again."});
-  //       console.log("Error")
-  //     })
-  // };
+  getHoroscope = (newUserInput) => {
+    this.setState({userName: newUserInput.userName, userZodiac: newUserInput.userZodiac});
 
-  resetHome = () => {
-    console.log("i'm gona reset homeeee");
+    return fetch(`https://aztro.sameerkumar.website/?sign=${newUserInput.userZodiac}&day=today`, {
+        method: "POST",
+      })
+      .then(res => {
+        if(res.ok) {
+          return res.json()
+        } else {
+          this.setState({error: "There was an error, please try again."});
+        }
+      })
+      .then(data => {
+        this.setState({horoscope: data})
+      })
+      .catch(error => {
+        this.setState({error: "There was an error, please try again."});
+        console.log("Error")
+      })
   };
 
-  getHoroscope = (newUserInput) => {
-    // it will need to run a fetch request to get the information i need based on the scorpio
-    console.log("horoscope got!")
-  }
+  resetHome = () => {
+    this.setState({
+      userName: "",
+      userZodiac: "",
+      horoscope: null,
+      error: ""
+    })
+  };
 
   render() {
     return (
       <div className="app-container">
         <h1>Horoscope IdeaBox</h1>
         <Form getHoroscope={this.getHoroscope} />
-        <HoroscopeContainer
-          horoscope="text about being a scorpio"
-          description="more text about being a scorpio?"
-          userName="Amber"
-          userZodiac="scorpio"
+        {this.state.horoscope && <HoroscopeContainer
+          horoscope={this.state.horoscope}
+          description={this.state.horoscope.description}
+          userName={this.state.userName}
+          userZodiac={this.state.userZodiac}
           resetHome={this.resetHome}
         />
+        }
       </div>
     )
   }

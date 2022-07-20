@@ -4,7 +4,8 @@
   border: .5em solid pink;
 }
 
-.input-field {
+.input-field,
+.select-dropdown {
   padding: .5em;
   margin: 1em;
 }
