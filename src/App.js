@@ -7,7 +7,10 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      horoscope: {},
+      userName: "",
+      userZodiac: "",
+      horoscope: null,
+      isloading: false,
       error: ""
     };
   };
@@ -35,22 +38,21 @@ class App extends Component {
 
   getHoroscope = (newUserInput) => {
     // it will need to run a fetch request to get the information i need based on the scorpio
-
+    console.log("horoscope got!")
   }
 
   render() {
     return (
       <div className="app-container">
         <h1>Horoscope IdeaBox</h1>
-        <Form />
-        {!this.state.horoscope && <HoroscopeContainer
+        <Form getHoroscope={this.getHoroscope} />
+        <HoroscopeContainer
           horoscope="text about being a scorpio"
           description="more text about being a scorpio?"
           userName="Amber"
           userZodiac="scorpio"
           resetHome={this.resetHome}
         />
-        }
       </div>
     )
   }

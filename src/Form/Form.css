@@ -1,6 +1,7 @@
 .form-container {
   text-align: center;
-  padding: 10px;
+  padding: 2em;
+  border: .5em solid pink;
 }
 
 .input-field {

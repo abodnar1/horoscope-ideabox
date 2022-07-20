@@ -23,8 +23,8 @@ class Form extends Component {
     }
     console.log(newUserInput);
     console.log("button works");
-    // i need to invoke a function in the app that renders the info using the newUserInput
 
+    this.props.getHoroscope(newUserInput);
     this.clearInputs();
   };
 
