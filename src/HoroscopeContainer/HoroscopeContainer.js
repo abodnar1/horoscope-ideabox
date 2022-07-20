@@ -7,10 +7,10 @@ const HoroscopeContainer = (props) => {
   return(
     <div className='horoscope-container'>
       <h1>{userName}'s Horoscope For Today</h1>
-      <h2>For a {userZodiac}</h2>
-      <p>{horoscope.description}</p>
-      <p>Your lucky number is: {horoscope.lucky_number}</p>
-      <button onClick={resetHome}>Get Another Horoscope!</button>
+      <h2>For a {userZodiac}:</h2>
+      <p className="sign-description">{horoscope.description}</p>
+      <p className="lucky-number">Your lucky number is: {horoscope.lucky_number}</p>
+      <button className="new-horoscope-button" onClick={resetHome}>Get Another Horoscope!</button>
     </div>
   )
 }
